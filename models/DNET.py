@@ -33,7 +33,7 @@ class DNET(nn.Module):
         else:
             raise Exception
 
-        # load and fix weights
+        # when training on KITTI Eigen split, we fix the encoder using the weights from AdaBins
         if args.DNET_fix_encoder_weights == "AdaBins_fix":
             model_path = "./ckpts/AdaBins_kitti_encoder.pt"
             print('loading AdaBins weights... {}'.format(model_path))
