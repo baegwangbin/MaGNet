@@ -1,0 +1,9 @@
+torch==1.6.0
+torchvision==0.7.0
+Pillow
+numpy
+matplotlib
+argparse
+tqdm
+glob2
+scipy

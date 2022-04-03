@@ -1,0 +1,24 @@
+--exp_name kitti_official
+--exp_dir ./exp/DNET/
+--visible_gpus 01
+
+--output_dim 2
+--output_type G
+--downsample_ratio 4
+
+--DNET_architecture DenseDepth_BN
+--DNET_fix_encoder_weights None
+
+--dataset_name kitti_official
+--dataset_path /path/to/KITTI/
+
+--input_height 352
+--input_width 1216
+--crop_height 352
+--crop_width 704
+--min_depth 1e-3
+--max_depth 60.0
+
+--do_kb_crop
+
+--ckpt_path ./ckpts/DNET_kitti_official.pt

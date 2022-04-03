@@ -1,0 +1,20 @@
+--exp_name 7scenes
+--exp_dir ./exp/DNET/
+--visible_gpus 01
+
+--output_dim 2
+--output_type G
+--downsample_ratio 4
+
+--DNET_architecture DenseDepth_BN
+--DNET_fix_encoder_weights None
+
+--dataset_name 7scenes
+--dataset_path /path/to/SevenScenes/
+
+--input_height 480
+--input_width 640
+--min_depth 1e-3
+--max_depth 10.0
+
+--ckpt_path ./ckpts/DNET_scannet.pt

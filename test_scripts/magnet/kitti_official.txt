@@ -1,0 +1,26 @@
+--exp_name kitti_official
+--exp_dir ./exp/MAGNET/
+--visible_gpus 01
+
+--DNET_ckpt ./ckpts/DNET_kitti_official.pt
+--FNET_ckpt ./ckpts/FNET_kitti_official.pt
+
+--MAGNET_sampling_range 3
+--MAGNET_num_samples 5
+--MAGNET_mvs_weighting CW5
+--MAGNET_num_train_iter 3
+--MAGNET_num_test_iter 3
+--MAGNET_window_radius 2
+--MAGNET_num_source_views 2
+
+--dataset_name kitti_official
+--dataset_path /path/to/KITTI/
+
+--input_height 352
+--input_width 1216
+--dpv_height 88
+--dpv_width 304
+--min_depth 1e-3
+--max_depth 60.0
+
+--MAGNET_ckpt ./ckpts/MAGNET_kitti_official.pt
