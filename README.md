@@ -9,7 +9,7 @@ Official implementation of the paper
 >
 > [Gwangbin Bae](https://baegwangbin.com), [Ignas Budvytis](https://mi.eng.cam.ac.uk/~ib255/), and [Roberto Cipolla](https://mi.eng.cam.ac.uk/~cipolla/)
 >
-> [[arXiv]](https://arxiv.org/abs/2112.08177)
+> [[arXiv]](https://arxiv.org/abs/2112.08177) [[openaccess]](https://openaccess.thecvf.com/content/CVPR2022/html/Bae_Multi-View_Depth_Estimation_by_Fusing_Single-View_Depth_Probability_With_Multi-View_CVPR_2022_paper.html) [[oral presentation]](https://www.youtube.com/watch?v=LM113ibJVmQ)
 
 <p align="center">
   <img width=100% src="https://github.com/baegwangbin/MaGNet/blob/master/figs/method.png?raw=true?raw=true">
