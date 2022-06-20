@@ -1,0 +1,25 @@
+--exp_name scannet
+--exp_dir ./exp/DNET/
+--visible_gpus 01
+
+--output_dim 2
+--output_type G
+--downsample_ratio 4
+
+--DNET_architecture DenseDepth_BN
+--DNET_fix_encoder_weights None
+
+--n_epochs 5
+--batch_size 16
+--validate_every 50000
+--visualize_every 10000
+
+--dataset_name scannet
+--dataset_path /path/to/ScanNet/
+
+--input_height 480
+--input_width 640
+--crop_height 416
+--crop_width 544
+--min_depth 1e-3
+--max_depth 10.0

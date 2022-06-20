@@ -1,0 +1,24 @@
+--exp_name kitti_eigen
+--exp_dir ./exp/FNET/
+--visible_gpus 01
+
+--MAGNET_window_radius 2
+--MAGNET_num_source_views 2
+
+--loss_fn l1
+
+--n_epochs 5
+--batch_size 4
+--validate_every 5000
+--visualize_every 1000
+--workers 8
+
+--dataset_name kitti_eigen
+--dataset_path /path/to/KITTI/
+
+--input_height 352
+--input_width 1216
+--dpv_height 88
+--dpv_width 304
+--min_depth 1e-3
+--max_depth 80.0

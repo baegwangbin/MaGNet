@@ -1,0 +1,28 @@
+--exp_name kitti_eigen
+--exp_dir ./exp/DNET/
+--visible_gpus 01
+
+--output_dim 2
+--output_type G
+--downsample_ratio 4
+
+--DNET_architecture DenseDepth_BN
+--DNET_fix_encoder_weights AdaBins_fix
+
+--n_epochs 5
+--batch_size 16
+--validate_every 5000
+--visualize_every 1000
+
+--dataset_name kitti_eigen
+--dataset_path /path/to/KITTI/
+
+--input_height 352
+--input_width 1216
+--crop_height 352
+--crop_width 704
+--min_depth 1e-3
+--max_depth 80.0
+
+--do_kb_crop
+--garg_crop

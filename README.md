@@ -118,8 +118,15 @@ You should get the following results:
 
 ## Training scripts
 
-Coming soon
+If you wish to train the models, run
 
+```python
+python train_DNet.py ./test_scripts/dnet/{scannet, kitti_eigen, kitti_official}.txt
+python train_FNet.py ./test_scripts/dnet/{scannet, kitti_eigen, kitti_official}.txt
+python train_MaGNet.py ./test_scripts/dnet/{scannet, kitti_eigen, kitti_official}.txt
+```
+
+Note that the `dataset_path` argument in the script `.txt` files should be modified
 
 ## Citation
 

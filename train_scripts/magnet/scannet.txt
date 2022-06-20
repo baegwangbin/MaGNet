@@ -1,0 +1,33 @@
+--exp_name scannet
+--exp_dir ./exp/MAGNET/
+--visible_gpus 01
+
+--DNET_ckpt ./ckpts/DNET_scannet.pt
+--FNET_ckpt ./ckpts/FNET_scannet.pt
+
+--MAGNET_sampling_range 3
+--MAGNET_num_samples 5
+--MAGNET_mvs_weighting CW5
+--MAGNET_num_train_iter 3
+--MAGNET_num_test_iter 3
+--MAGNET_window_radius 20
+--MAGNET_num_source_views 4
+
+--loss_fn gaussian
+--loss_gamma 0.8
+
+--n_epochs 5
+--batch_size 4
+--validate_every 50000
+--visualize_every 10000
+--workers 8
+
+--dataset_name scannet
+--dataset_path /path/to/ScanNet/
+
+--input_height 480
+--input_width 640
+--dpv_height 120
+--dpv_width 160
+--min_depth 1e-3
+--max_depth 10.0
